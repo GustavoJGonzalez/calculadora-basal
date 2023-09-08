@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body{
+    background: #f6f5f7; 
+    font-family: 'Montserrat', sans-serif;
+    color: #3E363F;
+}
+
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /*ESTAS 3 LINEAS SE ENCARGARAN DE CENTRAR EL DIV VERTICAL Y HORIZONTALMENTE */
+    position: absolute;
+    inset: 0;
+   margin: auto;
+   border-radius: 10px;
+   overflow: hidden; 
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+     0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+#calculadora{
+    background:white;
+    /* CON ESTAS 3 LINEAS VAMOS A HACER QUE LOS DIVS  QUEDEN LADO A LADO*/
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+
+
+#detalle{
+    background-color: aqua;
+    /* CON ESTAS 3 LINEAS VAMOS A HACER QUE LOS DIVS  QUEDEN LADO A LADO*/
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: black;
+
+}
+
+.contenido{
+    /*ESTAS TRES LINEAS VAN A CENTRAR EL CONTENIDO VERTICALMENTE DENTRO DE CADA DIV*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+
+
+input{
+    width: 70%;
+    padding: 12px 15px;
+    border: none;
+    background-color: aquamarine;
+}
+
+button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 50px;
+    border-radius: 40px;
+    background-color: cadetblue;
+    border: 1px solid #150408;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 20ms ease-in;
+}
+
+button:active {
+    transform: scale(0.80);
+}
+
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
